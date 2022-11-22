@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pago | Fantasy FC</title>
+  <script src="../js/scriptpago.js"></script>
+</head>
+
+<body>
+  <link rel="stylesheet" href="../css/style.css">
+  <header id="h1">
+    <a href="index.html">
+      <img src="../img/header.PNG" id="i1">
+    </a>
+    <h1 id="ti3">ÁREA DE SOCIOS DEL FANTASY FC</h1>
+  </header>
+
+  <form id="fo3" action="#" method="post" onsubmit="return validacion()">
+
+    <h1 id="ti2">FORMULARIO DE PAGO</h1>
+
+    <section>
+      <label for="numtarj">Numero de Tarjeta:</label><br>
+      <input id="numtarj" inputmode="numeric" maxlength="50">
+    </section>
+
+    <section>
+      <label for="nomtarj">Nombre de la Tarjeta:</label><br>
+      <input id="nomtarj" maxlength="50">
+    </section>
+
+    <section>
+      <div>
+        <label for="feccad">Fecha de Caducidad:</label><br>
+        <input id="feccad" placeholder="MM/AAAA" maxlength="5">
+      </div>
+      <div>
+        <label for="cvc">CVC</label><br>
+        <input id="cvc" inputmode="numeric" maxlength="3">
+      </div>
+    </section>
+    <br>
+    <input type="submit" id="s1" value="¡HAZTE SOCIO!" onsubmit="href:'../html/bienvenida.html'">
+  </form>
+  <br><br>
+  <footer id="f1">
+    <div id="d1">
+      <img src="../img/patrocinio.PNG" id="i2">
+      <img src="../img/ig.png" id="i3">
+      <a id="a1">@fantasytrinidad</a>
+      <br><br><br><br><br>
+      <img src="../img/correo.png" id="i4">
+      <a id="a3">pablooat1@gmail.com</a>
+      <br><br><br><br><br>
+      <img src="../img/telefono.png" id="i5">
+      <a id="a3">628375447</a>
+    </div>
+  </footer>
+</body>
+
+</html>

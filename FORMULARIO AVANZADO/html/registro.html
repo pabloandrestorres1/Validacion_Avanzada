@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Socio | Fantasy FC</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="../css/style.css">
+    <header id="h1">
+        <a href="index.html">
+            <img src="../img/header.PNG" id="i1">
+        </a>
+        <h1 id="ti3">ÁREA DE SOCIOS DEL FANTASY FC</h1>
+    </header>
+
+    <form id="fo2" onsubmit="return validacion()">
+        <label for="nom">Nombre:</label><br>
+        <input type="text" id="nom"><br>
+        <span id="nomalert">Nombre debe tener más de 3 caracteres</span>
+        <br>
+        <label for="ap1">Primer Apellido:</label><br>
+        <input type="text" id="ap1"><br>
+        <span id="ap1alert">Primer apellido debe tener más de 3 caracteres</span><br><br>
+        <label for="ap2">Segundo Apellido:</label><br>
+        <input type="text" id="ap2"><br>
+        <span id="ap2alert">Segundo apellido debe tener más de 3 caracteres</span>
+        <br><br>
+        <label for="numtel">Número de Teléfono:</label><br>
+        <input type="text" id="numtel"><br>
+        <span id="numalert">El número de Teléfono debe contener 9 NÚMEROS</span>
+        <br>
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="text" id="correo"><br>
+        <span id="correoalert">El formato del correo es incorrecto</span>
+        <br>
+        <label for="dom">Domicilio:</label><br>
+        <input type="text" id="dom"><br>
+        <span id="domalert">El domicilio debe contener más de 6 caracteres</span>
+        <br>
+        <label for="cp">Código Postal:</label><br>
+        <input type="text" id="cp"><br>
+        <span id="cpalert">El Código Postal debe contener 5 NÚMEROS</span>
+        <br>
+        <label for="fecnac">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecnac"><br><br>
+        <label for="cat">Categoría:</label><br>
+        <select id="cat" value=" ">
+          <option value="bebes">Bebés (0-3 años)</option>
+          <option value="ninos">Niños (4-12 años)</option>
+          <option value="juv">Juveniles (13-17 años)</option>
+          <option value="ad">Adultos (18-65 años)</option>
+          <option value="vet">Veteranos (+66 años)</option>
+          <option value="disc">Personas con Discapacidad</option>
+        </select>
+        <br><br>
+        <label for="zona">Zona del Campo Deseada:</label><br>
+        <select id="zona">
+          <option value="gngb">Gol Norte Grada Baja</option>
+          <option value="gnga">Gol Norte Grada Alta</option>
+          <option value="gsgb">Gol Sur Grada Baja</option>
+          <option value="gsga">Gol Sur Grada Alta</option>
+          <option value="pf">Preferencia</option>
+          <option value="fon">Fondo</option>
+        </select>
+        <br><br>
+        <label for="nomus">Nombre de Usuario:</label><br>
+        <input type="text" id="nomus"><br>
+        <span id="nomusalert">El nombre de usuario debe contener más de 5 caracteres</span>
+        <br>
+        <label for="cont">Contraseña:</label><br>
+        <input type="password" id="cont"><br>
+        <span id="contalert">El nombre de usuario debe contener más de 5 caracteres</span>
+        <br>
+        <input type="submit" id="enviar" value="¡HAZTE SOCIO!" disabled>
+    </form>
+    <br><br>
+    <footer id="f1">
+        <div id="d1">
+            <img src="../img/patrocinio.PNG" id="i2">
+            <img src="../img/ig.png" id="i3">
+            <a id="a1">@fantasytrinidad</a>
+            <br><br><br><br><br>
+            <img src="../img/correo.png" id="i4">
+            <a id="a3">pablooat1@gmail.com</a>
+            <br><br><br><br><br>
+            <img src="../img/telefono.png" id="i5">
+            <a id="a3">628375447</a>
+        </div>
+    </footer>
+    <script src="../js/scriptregistro.js"></script>
+</body>
+</html>
