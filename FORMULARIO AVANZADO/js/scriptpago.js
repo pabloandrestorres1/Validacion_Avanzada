@@ -1,41 +1,39 @@
-function validacion() {
-    var nomtarjER = /^ [\p{L} \-\.]+ /;
-    var numtarjER = /^ [\d ]{10,30}/;
+let numtarjCorrecto=false;
+let nomtarjCorrecto=false;
+let cvcCorrecto=false;
 
-    var numerotarjeta = document.getElementById("numtarj");
-    var nombretarjeta = document.getElementById("nomtarj");
-    var fechacaducidad = document.getElementById("feccad");
-    var cvc = document.getElementById("cvc");
+$("#numtarj").change(function(){
+    if($("#numtarj").val().length!=16){
+      $("#numtarjalert").show()
+      numtarjCorrecto=false;
+    }else{
+      $("#numtarjalert").hide()
+      numtarjCorrecto=true;
+  }
+});
 
-    let testBoolean = true;
+$("#nomtarj").change(function(){
+    if($("#nomtarj").val().length<5){
+      $("#nomtarjalert").show()
+      nomtarjCorrecto=false;
+    }else{
+      $("#nomtarjalert").hide()
+      nomtarjCorrecto=true;
+  }
+});
 
-    if (numerotarjeta.value == "") {
-        alert("[ERROR] Número de Tarjeta Vacío");
-        testBoolean = false;
-    }else if (numtarjER == false) {
-        alert("[ERROR] El Número de Tarjeta introducido no es válido");
-        testBoolean = false;
+$("#cvc").change(function(){
+    if($("#cvc").val().length!=3){
+      $("#cvcalert").show()
+      cvcCorrecto=false;
+    }else{
+      $("#cvcalert").hide()
+      cvcCorrecto=true;
+  }
+});
+
+function validar(){
+    if(numtarjCorrecto && nomtarjCorrecto && cvcCorrecto){
+      location.href ='bienvenida.html';
     }
-
-    if (nombretarjeta.value == "") {
-        alert("[ERROR] Nombre de Tarjeta Vacío");
-        testBoolean = false;
-    }else if (nomtarjER == false) {
-        alert("[ERROR] El Nombre de tarjeta introducido no es válido");
-        testBoolean = false;
-    }
-
-    if (fechacaducidad.value == "") {
-        alert("[ERROR] Fecha de Caducidad Vacía");
-        testBoolean = false;
-    }
-
-    if (cvc.value == "") {
-        alert("[ERROR] Código CVC Vacío");
-        testBoolean = false;
-    } 
-
-    if (testBoolean == true) {
-        alert("El formulario se ha enviado correctamente");
-      }
-}
+  }

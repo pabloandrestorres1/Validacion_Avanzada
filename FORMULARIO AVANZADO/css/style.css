@@ -209,7 +209,7 @@ td, th{
     font-size: 13px;
 }
 
-#nomalert, #ap1alert,#ap2alert, #numalert, #correoalert, #domalert, #cpalert, #fecnacalert, #nomusalert, #contalert{
+#nomalert, #ap1alert,#ap2alert, #numalert, #correoalert, #domalert, #cpalert, #fecnacalert, #nomusalert, #contalert, #nomtarjalert, #numtarjalert, #cvcalert{
     color: red;
     font-size: 15px;
     display: none;

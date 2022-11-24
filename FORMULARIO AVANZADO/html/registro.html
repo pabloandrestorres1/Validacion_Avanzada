@@ -16,7 +16,7 @@
         <h1 id="ti3">ÁREA DE SOCIOS DEL FANTASY FC</h1>
     </header>
 
-    <form id="fo2" onsubmit="return validacion()">
+    <form id="fo2" action="pago.html">
         <label for="nom">Nombre:</label><br>
         <input type="text" id="nom"><br>
         <span id="nomalert">Nombre debe tener más de 3 caracteres</span>
@@ -29,7 +29,7 @@
         <span id="ap2alert">Segundo apellido debe tener más de 3 caracteres</span>
         <br><br>
         <label for="numtel">Número de Teléfono:</label><br>
-        <input type="text" id="numtel"><br>
+        <input type="number" id="numtel"><br>
         <span id="numalert">El número de Teléfono debe contener 9 NÚMEROS</span>
         <br>
         <label for="correo">Correo Electrónico:</label><br>
@@ -41,7 +41,7 @@
         <span id="domalert">El domicilio debe contener más de 6 caracteres</span>
         <br>
         <label for="cp">Código Postal:</label><br>
-        <input type="text" id="cp"><br>
+        <input type="number" id="cp"><br>
         <span id="cpalert">El Código Postal debe contener 5 NÚMEROS</span>
         <br>
         <label for="fecnac">Fecha de Nacimiento:</label><br>
@@ -74,7 +74,7 @@
         <input type="password" id="cont"><br>
         <span id="contalert">El nombre de usuario debe contener más de 5 caracteres</span>
         <br>
-        <input type="submit" id="enviar" value="¡HAZTE SOCIO!" disabled>
+        <input type="button" id="enviar" value="¡HAZTE SOCIO!" onclick="validar()">
     </form>
     <br><br>
     <footer id="f1">
