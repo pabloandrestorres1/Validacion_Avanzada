@@ -294,3 +294,8 @@ td, th{
     width: 10%;
     margin-left: 35%;
 }
+
+#nomsave{
+    color: black;
+    font-size: 40px;
+}

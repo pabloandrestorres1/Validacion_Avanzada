@@ -15,11 +15,15 @@
         <h1 id="ti3">ÁREA DE SOCIOS DEL FANTASY FC</h1>
         <a id="a7" href="../html/entradas.html">COMPRAR ENTRADAS CON DESCUENTO</a> 
         <a id="a7" href="../html/visitantes.html">COMPRAR ENTRADAS PARA PARTIDOS DE VISITANTE</a> 
-        <a id="a7" href="../html/mejora.html">MEJORAR ABONO</a>
+        
     </header>
 
-    <h1 id="ti2">HOLA, <script>document.getElementById("nombre").innerHTML = nom;</script></h1>
-
+   <script>
+    function recuperaNombre(){
+        document.getElementById("nom").innerHTML="Bienvenido: "+ JSON.parse(localStorage("nomsave"));
+    }
+   </script>
+    <input type="button" value="Hola" onclick="recuperaNombre()" id="nomsave">
     <footer id="f1">
         <div id="d1">
             <img src="../img/patrocinio.PNG" id="i2">
@@ -33,5 +37,7 @@
             <a id="a3">628375447</a>
         </div>
     </footer>
+    
+    
 </body>
 </html>

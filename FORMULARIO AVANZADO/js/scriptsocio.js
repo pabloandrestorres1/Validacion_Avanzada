@@ -1,0 +1,9 @@
+document.getElementById("nomsave").innerHTML=localStorage.getItem("nom");
+document.getElementById("ap1save").innerHTML=localStorage.getItem("ap1");
+document.getElementById("ap2save").innerHTML=localStorage.getItem("ap2");
+document.getElementById("numtelsave").innerHTML=localStorage.getItem("numtel");
+document.getElementById("correosave").innerHTML=localStorage.getItem("correo");
+document.getElementById("domsave").innerHTML=localStorage.getItem("dom");
+document.getElementById("cpsave").innerHTML=localStorage.getItem("cp");
+document.getElementById("nomussave").innerHTML=localStorage.getItem("nomus");
+document.getElementById("contsave").innerHTML=localStorage.getItem("cont");

@@ -101,7 +101,52 @@ $("#cont").change(function(){
 });
 
 function validar(){
-  if(nomCorrecto && ap1Correcto && ap2Correcto && numtelCorrecto && correoCorrecto && domCorrecto && cpCorrecto && nomCorrecto && contCorrecto){
+  if(nomCorrecto && ap1Correcto && ap2Correcto && numtelCorrecto && correoCorrecto && domCorrecto && cpCorrecto && nomusCorrecto && contCorrecto){
     location.href ='pago.html';
   }
 }
+
+document.getElementById("submit").addEventListener("click", function(){
+  var nombre = document.getElementById("nom");
+  localStorage.setItem("nom", nombre).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var apell1 = document.getElementById("ap1");
+  localStorage.setItem("ap1", apell1).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var apell2 = document.getElementById("ap2");
+  localStorage.setItem("ap2", apell2).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var numerotel = document.getElementById("numtel");
+  localStorage.setItem("numtel", numerotel).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var corr = document.getElementById("correo");
+  localStorage.setItem("correo", corr).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var domicilio = document.getElementById("dom");
+  localStorage.setItem("dom", domicilio).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var codpost = document.getElementById("cp");
+  localStorage.setItem("cp", codpost).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var nombreUs = document.getElementById("nomus");
+  localStorage.setItem("nomus", nombreUs).value;
+});
+
+document.getElementById("submit").addEventListener("click", function(){
+  var contrasenia = document.getElementById("cont");
+  localStorage.setItem("cont", contrasenia).value;
+});
